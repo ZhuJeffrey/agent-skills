@@ -57,6 +57,34 @@ description: What it does and when to use it. Write in third person.
 
 See `skills/_template/SKILL.md` for a full starter.
 
+## Product Manager Skills
+
+49 PM frameworks from [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills), vendored as a git submodule:
+
+```
+vendor/product-manager-skills/skills/
+├── user-story/
+├── jobs-to-be-done/
+├── prd-development/
+└── ... (46 more)
+```
+
+After cloning this repo, initialize the submodule:
+
+```bash
+git submodule update --init --recursive
+./scripts/install.sh
+```
+
+To pull upstream updates:
+
+```bash
+git submodule update --remote vendor/product-manager-skills
+./scripts/install.sh
+```
+
+Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — see upstream [LICENSE](https://github.com/deanpeters/Product-Manager-Skills/blob/main/LICENSE).
+
 ## Contributing
 
 Add skills under `skills/<skill-name>/`. Keep each `SKILL.md` under 500 lines; put long reference material in separate files.
